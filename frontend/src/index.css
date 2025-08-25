@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+body {
+             font-family: "Roboto", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: 400;
+             font-style: normal;
+             font-variation-settings:
+                     "wdth" 100;
+         }
+
+.link {
+    @apply
+    p-3
+    bg-gray-200
+    rounded-md
+    drop-shadow-lg
+}
+
+.linkActive {
+    @apply
+    p-3
+    rounded-md
+    drop-shadow-lg
+    bg-gray-400
+}
+
+.link:hover {
+    @apply
+    bg-blue-100
+    transition
+    scale-105
+    duration-100
+    ease-out
+}
+
+.products-preview {
+    @apply
+    w-full
+    h-96
+    mt-5
+    grid grid-cols-3 grid-rows-1
+    gap-4
+    pr-4
+    pl-4
+    justify-items-center; /* center the items in each column */
+}
+
+.productBox {
+    @apply
+    shadow-lg
+    rounded-lg
+    relative
+}
