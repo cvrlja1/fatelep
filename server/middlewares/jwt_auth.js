@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const verifyToken = (req, res, next) => {
+exports.verifyToken = (req, res, next) => {
     const authHeader = req.headers["authorization"];
     if (!authHeader) {
         return res.status(401).send("Not authorized");

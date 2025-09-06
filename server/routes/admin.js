@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const pool = require("../config/db.js");
 const bcrypt = require("bcrypt");
-const jwtauth = require("../middlewares/jwt_auth.js");
+const {verifyToken} = require("../middlewares/jwt_auth");
 
 router.post("/login", async (req, res) => {
     const { username, password } = req.body;
